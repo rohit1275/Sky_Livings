@@ -1,0 +1,2384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover Sky Livings' premium PG services near LPU Phagwara. Fully furnished rooms, 24/7 security, high-speed WiFi, and modern amenities. Best student accommodation in Phagwara.">
+    <meta name="keywords" content="pg services phagwara, lpu student accommodation, pg facilities near lpu, furnished rooms phagwara, pg with food near lpu, pg for girls phagwara, pg for boys phagwara, student housing facilities, lpu hostel facilities">
+    <meta name="author" content="Sky Livings">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="PG Services & Facilities Near LPU | Sky Livings Premium Accommodation">
+    <meta property="og:description" content="Explore our premium PG services with modern amenities, comfortable living spaces, and excellent facilities for LPU students.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:url" content="https://skylivings.com/services">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>PG Services & Facilities Near LPU | Sky Livings Premium Student Accommodation</title>
+
+    <!-- Favicon and Manifest -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services.css">
+
+    <!-- Box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- logo -->
+        <a href="" class="logo"><img src="img/Sky Livings Logo.png" alt=""></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- Nav-list -->
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+
+        <!-- whatsapp btn-->
+        <div class="header-btn">
+            <a href="https://wa.me/919056625905" target="_blank" title="Chat on WhatsApp">
+                <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp"
+                    style="height: 40px;" />
+            </a>
+        </div>
+    </header>
+
+    <!-- Services Hero Section -->
+        <div class="hero-section">
+            <div class="hero-text">
+              <span>A HOME</span>
+              <span>AWAY FROM</span>
+              <span>HOME</span>
+            </div>
+          </div>
+
+    <!-- Booking Steps Section -->
+    <section class="booking-steps">
+        <h2>How to Book Your PG</h2>
+        <div class="steps-container">
+            <div class="step-box">
+                <i class='bx bx-search-alt'></i>
+                <h3>Search</h3>
+                <p>Browse through our wide range of PG options</p>
+            </div>
+            <div class="step-box">
+                <i class='bx bx-calendar-check'></i>
+                <h3>Schedule Visit</h3>
+                <p>Book a visit to see the PG in person</p>
+            </div>
+            <div class="step-box">
+                <i class='bx bx-check-circle'></i>
+                <h3>Confirm Booking</h3>
+                <p>Complete the booking process and move in</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PG Listings Section -->
+    <section class="pg-listings">
+        <h2>Available PGs</h2>
+        <div class="pg-container">
+            <!-- PG Box 1 -->
+            <div class="pg-box" id="pg-box-pg1" onclick="showPgDetails('pg1')">
+                <div class="pg-image">
+                    <button class="nav-btn prev-btn" onclick="event.stopPropagation(); changeCardImage('pg1', -1)">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <img class="slide-image" src="img/Bajaj1.jpg" alt="PG Image">
+                    <button class="nav-btn next-btn" onclick="event.stopPropagation(); changeCardImage('pg1', 1)">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <span class="rating"><i class='bx bxs-star'></i> 3.6</span>
+                    <div class="gold-tag">Gold</div>
+                </div>
+                <div class="pg-info">
+                    <h3>Bajaj Villa</h3>
+                    <p class="location"><i class='bx bxs-map'></i> PG in Phase-3, Back Gate</p>
+                    <p class="price">₹7,500 <span>Onwards</span></p>
+                </div>
+                <div class="pg-buttons">
+                    <button class="schedule-btn">Schedule Visit</button>
+                    <button class="enquire-btn">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- PG Details Modal 1 -->
+            <div id="pgDetailsModal-pg1" class="modal">
+                <div class="modal-content details-modal">
+                    <span class="close">&times;</span>
+                    <div class="pg-details-container">
+                        <div class="pg-details-image">
+                            <div class="main-image">
+                                <img id="modalPgImage-pg1" src="img/Bajaj1.jpg" alt="PG Image">
+                                <span class="modal-rating"><i class='bx bxs-star'></i> 3.6</span>
+                            </div>
+                            <div class="image-thumbnails">
+                                <img src="img/Bajaj1.jpg" alt="PG Image 1" onclick="changeMainImage('pg1', this.src)">
+                                <img src="img/Bajaj2.png" alt="PG Image 2" onclick="changeMainImage('pg1', this.src)">
+                                <img src="img/Bajaj3.jpg" alt="PG Image 3" onclick="changeMainImage('pg1', this.src)">
+                                <img src="img/Bajaj4.jpg" alt="PG Image 4" onclick="changeMainImage('pg1', this.src)">
+                            </div>
+                        </div>
+                        <div class="pg-details-info">
+                            <h2>Bajaj Villa</h2>
+                            <p class="modal-location"><i class='bx bxs-map'></i> PG in Phase-3, Back Gate</p>
+                            <p class="modal-price">₹7,500 <span>Onwards</span></p>
+                            <p class="modal-address"># Phase-3, Back Gate, Phagwara, Punjab 144411</p>
+                            
+                            <div class="amenities">
+                                <h3>Amenities</h3>
+                                
+                                <!-- Style Section -->
+                                <div class="amenities-section style-section">
+                                    <h4><i class='bx bxs-crown'></i> Style</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-drawer'></i> Bedside Table</span>
+                                        <span><i class='bx bxs-cabinet'></i> Cupboard</span>
+                                        <span><i class='bx bxs-curtains'></i> Curtains</span>
+                                        <span><i class='bx bxs-trash'></i> Waste Management</span>
+                                        <span><i class='bx bxs-blanket'></i> Premium Bedding</span>
+                                        <span><i class='bx bxs-image'></i> Photo Frame</span>
+                                        <span><i class='bx bxs-chair'></i> Study Table & Chair</span>
+                                        <span><i class='bx bxs-cool'></i> AC</span>
+                                        <span><i class='bx bxs-sun'></i> Well-lit and Ventilated</span>
+                                        <span><i class='bx bxs-fridge'></i> Common Refrigerator</span>
+                                        <span><i class='bx bxs-tv'></i> TV</span>
+                                        <span><i class='bx bxs-grid'></i> Shoe Rack</span>
+                                    </div>
+                                </div>
+
+                                <!-- Safety Section -->
+                                <div class="amenities-section safety-section">
+                                    <h4><i class='bx bxs-shield-alt-2'></i> Safety</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-camera'></i> CCTV</span>
+                                        <span><i class='bx bxs-key'></i> Access Control</span>
+                                        <span><i class='bx bxs-phone-call'></i> SOS/ Emergency Response</span>
+                                    </div>
+                                </div>
+
+                                <!-- Savings Section -->
+                                <div class="amenities-section savings-section">
+                                    <h4><i class='bx bxs-wallet'></i> Savings</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-badge-dollar'></i> No Brokerage</span>
+                                        <span><i class='bx bxs-lock-open-alt'></i> Flexi-Lock-in</span>
+                                        <span><i class='bx bxs-bank'></i> 1 Month Deposit</span>
+                                    </div>
+                                </div>
+
+                                <!-- Smart Section -->
+                                <div class="amenities-section smart-section">
+                                    <h4><i class='bx bxs-bulb'></i> Smart</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-wifi'></i> High Speed WiFi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="modal-buttons">
+                                <button class="schedule-btn" onclick="openBookingModal('Bajaj Villa')">Schedule Visit</button>
+                                <button class="enquire-btn" onclick="openEnquiryModal('Bajaj Villa')">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PG Box 2 -->
+            <div class="pg-box" id="pg-box-pg2" onclick="showPgDetails('pg2')">
+                <div class="pg-image">
+                    <button class="nav-btn prev-btn" onclick="event.stopPropagation(); changeCardImage('pg2', -1)">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <img class="slide-image" src="img/ShivNiwas1.jpg" alt="PG Image">
+                    <button class="nav-btn next-btn" onclick="event.stopPropagation(); changeCardImage('pg2', 1)">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <span class="rating"><i class='bx bxs-star'></i> 3.8</span>
+                </div>
+                <div class="pg-info">
+                    <h3>Shiv Niwas Pg</h3>
+                    <p class="location"><i class='bx bxs-map'></i> PG in Jazzy Properties</p>
+                    <p class="price">₹10,000 <span>Onwards</span></p>
+                </div>
+                <div class="pg-buttons">
+                    <button class="schedule-btn">Schedule Visit</button>
+                    <button class="enquire-btn">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- PG Details Modal 2 -->
+            <div id="pgDetailsModal-pg2" class="modal">
+                <div class="modal-content details-modal">
+                    <span class="close">&times;</span>
+                    <div class="pg-details-container">
+                        <div class="pg-details-image">
+                            <div class="main-image">
+                                <img id="modalPgImage-pg2" src="img/ShivNiwas1.jpg" alt="PG Image">
+                                <span class="modal-rating"><i class='bx bxs-star'></i> 3.8</span>
+                            </div>
+                            <div class="image-thumbnails">
+                                <img src="img/ShivNiwas1.jpg" alt="PG Image 1" onclick="changeMainImage('pg2', this.src)">
+                                <img src="img/ShivNiwas2.jpg" alt="PG Image 2" onclick="changeMainImage('pg2', this.src)">
+                                <img src="img/ShivNiwas3.jpg" alt="PG Image 3" onclick="changeMainImage('pg2', this.src)">
+                                <img src="img/ShivNiwas4.jpg" alt="PG Image 4" onclick="changeMainImage('pg2', this.src)">
+                            </div>
+                        </div>
+                        <div class="pg-details-info">
+                            <h2>Shiv Niwas Pg</h2>
+                            <p class="modal-location"><i class='bx bxs-map'></i> PG in Jazzy Properties</p>
+                            <p class="modal-price">₹10,000 <span>Onwards</span></p>
+                            <p class="modal-address"># Jazzy Properties, Law Gate Rd, Phagwara, Punjab 144411</p>
+                            
+                            <div class="amenities">
+                                <h3>Amenities</h3>
+                                
+                                <!-- Style Section -->
+                                <div class="amenities-section style-section">
+                                    <h4><i class='bx bxs-crown'></i> Style</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-drawer'></i> Bedside Table</span>
+                                        <span><i class='bx bxs-cabinet'></i> Cupboard</span>
+                                        <span><i class='bx bxs-curtains'></i> Curtains</span>
+                                        <span><i class='bx bxs-trash'></i> Waste Management</span>
+                                        <span><i class='bx bxs-blanket'></i> Premium Bedding</span>
+                                        <span><i class='bx bxs-image'></i> Photo Frame</span>
+                                        <span><i class='bx bxs-chair'></i> Study Table & Chair</span>
+                                        <span><i class='bx bxs-cool'></i> AC</span>
+                                        <span><i class='bx bxs-sun'></i> Well-lit and Ventilated</span>
+                                        <span><i class='bx bxs-fridge'></i> Common Refrigerator</span>
+                                        <span><i class='bx bxs-tv'></i> TV</span>
+                                        <span><i class='bx bxs-grid'></i> Shoe Rack</span>
+                                    </div>
+                                </div>
+
+                                <!-- Safety Section -->
+                                <div class="amenities-section safety-section">
+                                    <h4><i class='bx bxs-shield-alt-2'></i> Safety</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-camera'></i> CCTV</span>
+                                        <span><i class='bx bxs-key'></i> Access Control</span>
+                                        <span><i class='bx bxs-phone-call'></i> SOS/ Emergency Response</span>
+                                    </div>
+                                </div>
+
+                                <!-- Savings Section -->
+                                <div class="amenities-section savings-section">
+                                    <h4><i class='bx bxs-wallet'></i> Savings</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-badge-dollar'></i> No Brokerage</span>
+                                        <span><i class='bx bxs-lock-open-alt'></i> Flexi-Lock-in</span>
+                                        <span><i class='bx bxs-bank'></i> 1 Month Deposit</span>
+                                    </div>
+                                </div>
+
+                                <!-- Smart Section -->
+                                <div class="amenities-section smart-section">
+                                    <h4><i class='bx bxs-bulb'></i> Smart</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-wifi'></i> High Speed WiFi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="modal-buttons">
+                                <button class="schedule-btn" onclick="openBookingModal('Shiv Niwas Pg')">Schedule Visit</button>
+                                <button class="enquire-btn" onclick="openEnquiryModal('Shiv Niwas Pg')">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PG Box 3 -->
+            <div class="pg-box" id="pg-box-pg3" onclick="showPgDetails('pg3')">
+                <div class="pg-image">
+                    <button class="nav-btn prev-btn" onclick="event.stopPropagation(); changeCardImage('pg3', -1)">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <img class="slide-image" src="img/Lavish1.png" alt="PG Image">
+                    <button class="nav-btn next-btn" onclick="event.stopPropagation(); changeCardImage('pg3', 1)">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <span class="rating"><i class='bx bxs-star'></i> 3.6</span>
+                </div>
+                <div class="pg-info">
+                    <h3>Lavish Villa</h3>
+                    <p class="location"><i class='bx bxs-map'></i> 2 BHK in Jazzy Properties</p>
+                    <p class="price">₹25,000 <span>Onwards</span></p>
+                </div>
+                <div class="pg-buttons">
+                    <button class="schedule-btn">Schedule Visit</button>
+                    <button class="enquire-btn">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- PG Details Modal 3 -->
+            <div id="pgDetailsModal-pg3" class="modal">
+                <div class="modal-content details-modal">
+                    <span class="close">&times;</span>
+                    <div class="pg-details-container">
+                        <div class="pg-details-image">
+                            <div class="main-image">
+                                <img id="modalPgImage-pg3" src="img/Lavish1.png" alt="PG Image">
+                                <span class="modal-rating"><i class='bx bxs-star'></i> 3.6</span>
+                            </div>
+                            <div class="image-thumbnails">
+                                <img src="img/Lavish1.png" alt="PG Image 1" onclick="changeMainImage('pg3', this.src)">
+                                <img src="img/Lavish2.jpg" alt="PG Image 2" onclick="changeMainImage('pg3', this.src)">
+                                <img src="img/Lavish3.jpg" alt="PG Image 3" onclick="changeMainImage('pg3', this.src)">
+                                <img src="img/Lavish4.jpg" alt="PG Image 4" onclick="changeMainImage('pg3', this.src)">
+                            </div>
+                        </div>
+                        <div class="pg-details-info">
+                            <h2>Lavish Villa</h2>
+                            <p class="modal-location"><i class='bx bxs-map'></i> 2 BHK in Jazzy Properties</p>
+                            <p class="modal-price">₹25,000 <span>Onwards</span></p>
+                            <p class="modal-address"># Jazzy Properties, Law Gate Rd, Phagwara, Punjab 144411</p>
+                            
+                            <div class="amenities">
+                                <h3>Amenities</h3>
+                                
+                                <!-- Style Section -->
+                                <div class="amenities-section style-section">
+                                    <h4><i class='bx bxs-crown'></i> Style</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-drawer'></i> Swimming Pool</span>
+                                        <span><i class='bx bxs-cabinet'></i> Cupboard</span>
+                                        <span><i class='bx bxs-drawer'></i> sofa</span>
+                                        <span><i class='bx bxs-curtains'></i> Curtains</span>
+                                        <span><i class='bx bxs-trash'></i> Waste Management</span>
+                                        <span><i class='bx bxs-blanket'></i>2 Rooms with premium Bedding</span>
+                                        <span><i class='bx bxs-image'></i> Photo Frames</span>
+                                        <span><i class='bx bxs-chair'></i> Dining Table & Chair</span>
+                                        <span><i class='bx bxs-cool'></i> AC</span>
+                                        <span><i class='bx bxs-sun'></i> Well-lit and Ventilated</span>
+                                        <span><i class='bx bxs-fridge'></i> Common Refrigerator</span>
+                                        <span><i class='bx bxs-tv'></i> TV</span>
+                                        <span><i class='bx bxs-grid'></i> Shoe Rack</span>
+                                    </div>
+                                </div>
+
+                                <!-- Safety Section -->
+                                <div class="amenities-section safety-section">
+                                    <h4><i class='bx bxs-shield-alt-2'></i> Safety</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-camera'></i> CCTV</span>
+                                        <span><i class='bx bxs-key'></i> Access Control</span>
+                                        <span><i class='bx bxs-phone-call'></i> SOS/ Emergency Response</span>
+                                    </div>
+                                </div>
+
+                                <!-- Savings Section -->
+                                <div class="amenities-section savings-section">
+                                    <h4><i class='bx bxs-wallet'></i> Savings</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-badge-dollar'></i> No Brokerage</span>
+                                        <span><i class='bx bxs-lock-open-alt'></i> Flexi-Lock-in</span>
+                                        <span><i class='bx bxs-bank'></i> 1 Month Deposit</span>
+                                    </div>
+                                </div>
+
+                                <!-- Smart Section -->
+                                <div class="amenities-section smart-section">
+                                    <h4><i class='bx bxs-bulb'></i> Smart</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-wifi'></i> High Speed WiFi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="modal-buttons">
+                                <button class="schedule-btn" onclick="openBookingModal('Lavish Villa')">Schedule Visit</button>
+                                <button class="enquire-btn" onclick="openEnquiryModal('Lavish Villa')">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PG Box 4 -->
+            <div class="pg-box" id="pg-box-pg4" onclick="showPgDetails('pg4')">
+                <div class="pg-image">
+                    <button class="nav-btn prev-btn" onclick="event.stopPropagation(); changeCardImage('pg4', -1)">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <img class="slide-image" src="img/eastwood1.jpg" alt="PG Image">
+                    <button class="nav-btn next-btn" onclick="event.stopPropagation(); changeCardImage('pg4', 1)">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <span class="rating"><i class='bx bxs-star'></i> 4.4</span>
+                </div>
+                <div class="pg-info">
+                    <h3>Eastwood Apartment</h3>
+                    <p class="location"><i class='bx bxs-map'></i> PG in Jazzy Properties</p>
+                    <p class="price">₹10,000 <span>Onwards</span></p>
+                </div>
+                <div class="pg-buttons">
+                    <button class="schedule-btn">Schedule Visit</button>
+                    <button class="enquire-btn">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- PG Details Modal 4 -->
+            <div id="pgDetailsModal-pg4" class="modal">
+                <div class="modal-content details-modal">
+                    <span class="close">&times;</span>
+                    <div class="pg-details-container">
+                        <div class="pg-details-image">
+                            <div class="main-image">
+                                <img id="modalPgImage-pg4" src="img/eastwood1.jpg" alt="PG Image">
+                                <span class="modal-rating"><i class='bx bxs-star'></i> 4.4</span>
+                            </div>
+                            <div class="image-thumbnails">
+                                <img src="img/eastwood1.jpg" alt="PG Image 1" onclick="changeMainImage('pg4', this.src)">
+                                <img src="img/eastwood2.jpg" alt="PG Image 2" onclick="changeMainImage('pg4', this.src)">
+                                <img src="img/eastwood3.jpg" alt="PG Image 3" onclick="changeMainImage('pg4', this.src)">
+                                <img src="img/eastwood4.jpg" alt="PG Image 4" onclick="changeMainImage('pg4', this.src)">
+                            </div>
+                        </div>
+                        <div class="pg-details-info">
+                            <h2>Eastwood Apartment</h2>
+                            <p class="modal-location"><i class='bx bxs-map'></i> PG in Jazzy Properties</p>
+                            <p class="modal-price">₹10,000 <span>Onwards</span></p>
+                            <p class="modal-address"># Jazzy Properties, Law Gate Rd, Phagwara, Punjab 144411</p>
+                            
+                            <div class="amenities">
+                                <h3>Amenities</h3>
+                                
+                                <!-- Style Section -->
+                                <div class="amenities-section style-section">
+                                    <h4><i class='bx bxs-crown'></i> Style</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-drawer'></i> Bedside Table</span>
+                                        <span><i class='bx bxs-cabinet'></i> Cupboard</span>
+                                        <span><i class='bx bxs-curtains'></i> Curtains</span>
+                                        <span><i class='bx bxs-trash'></i> Waste Management</span>
+                                        <span><i class='bx bxs-blanket'></i> Premium Bedding</span>
+                                        <span><i class='bx bxs-image'></i> Photo Frame</span>
+                                        <span><i class='bx bxs-chair'></i> Study Table & Chair</span>
+                                        <span><i class='bx bxs-cool'></i> AC</span>
+                                        <span><i class='bx bxs-sun'></i> Well-lit and Ventilated</span>
+                                        <span><i class='bx bxs-fridge'></i> Common Refrigerator</span>
+                                        <span><i class='bx bxs-tv'></i> TV</span>
+                                        <span><i class='bx bxs-grid'></i> Shoe Rack</span>
+                                    </div>
+                                </div>
+
+                                <!-- Safety Section -->
+                                <div class="amenities-section safety-section">
+                                    <h4><i class='bx bxs-shield-alt-2'></i> Safety</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-camera'></i> CCTV</span>
+                                        <span><i class='bx bxs-key'></i> Access Control</span>
+                                        <span><i class='bx bxs-phone-call'></i> SOS/ Emergency Response</span>
+                                    </div>
+                                </div>
+
+                                <!-- Savings Section -->
+                                <div class="amenities-section savings-section">
+                                    <h4><i class='bx bxs-wallet'></i> Savings</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-badge-dollar'></i> No Brokerage</span>
+                                        <span><i class='bx bxs-lock-open-alt'></i> Flexi-Lock-in</span>
+                                        <span><i class='bx bxs-bank'></i> 1 Month Deposit</span>
+                                    </div>
+                                </div>
+
+                                <!-- Smart Section -->
+                                <div class="amenities-section smart-section">
+                                    <h4><i class='bx bxs-bulb'></i> Smart</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-wifi'></i> High Speed WiFi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="modal-buttons">
+                                <button class="schedule-btn" onclick="openBookingModal('Eastwood Apartment')">Schedule Visit</button>
+                                <button class="enquire-btn" onclick="openEnquiryModal('Eastwood Apartment')">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PG Box 5 -->
+            <div class="pg-box" id="pg-box-pg5" onclick="showPgDetails('pg5')">
+                <div class="pg-image">
+                    <button class="nav-btn prev-btn" onclick="event.stopPropagation(); changeCardImage('pg5', -1)">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <img class="slide-image" src="img/Harjap1.png" alt="PG Image">
+                    <button class="nav-btn next-btn" onclick="event.stopPropagation(); changeCardImage('pg5', 1)">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <span class="rating"><i class='bx bxs-star'></i> 4.5</span>
+                </div>
+                <div class="pg-info">
+                    <h3>Harjap Homes</h3>
+                    <p class="location"><i class='bx bxs-map'></i> PG in Green Valley</p>
+                    <p class="price">₹8,000 <span>Onwards</span></p>
+                </div>
+                <div class="pg-buttons">
+                    <button class="schedule-btn">Schedule Visit</button>
+                    <button class="enquire-btn">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- PG Details Modal 5 -->
+            <div id="pgDetailsModal-pg5" class="modal">
+                <div class="modal-content details-modal">
+                    <span class="close">&times;</span>
+                    <div class="pg-details-container">
+                        <div class="pg-details-image">
+                            <div class="main-image">
+                                <img id="modalPgImage-pg5" src="img/Harjap1.png" alt="PG Image">
+                                <span class="modal-rating"><i class='bx bxs-star'></i> 4.5</span>
+                            </div>
+                            <div class="image-thumbnails">
+                                <img src="img/Harjap1.png" alt="PG Image 1" onclick="changeMainImage('pg5', this.src)">
+                                <img src="img/Harjap2.png" alt="PG Image 2" onclick="changeMainImage('pg5', this.src)">
+                                <img src="img/Harjap3.jpg" alt="PG Image 3" onclick="changeMainImage('pg5', this.src)">
+                                <img src="img/Harjap4.jpg" alt="PG Image 4" onclick="changeMainImage('pg5', this.src)">
+                            </div>
+                        </div>
+                        <div class="pg-details-info">
+                            <h2>Harjap Homes</h2>
+                            <p class="modal-location"><i class='bx bxs-map'></i> PG in Green Valley</p>
+                            <p class="modal-price">₹8,000 <span>Onwards</span></p>
+                            <p class="modal-address"># Green Valley, Phagwara, Punjab 144411</p>
+                            
+                            <div class="amenities">
+                                <h3>Amenities</h3>
+                                
+                                <!-- Style Section -->
+                                <div class="amenities-section style-section">
+                                    <h4><i class='bx bxs-crown'></i> Style</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-drawer'></i> Bedside Table</span>
+                                        <span><i class='bx bxs-cabinet'></i> Cupboard</span>
+                                        <span><i class='bx bxs-curtains'></i> Curtains</span>
+                                        <span><i class='bx bxs-trash'></i> Waste Management</span>
+                                        <span><i class='bx bxs-blanket'></i> Premium Bedding</span>
+                                        <span><i class='bx bxs-image'></i> Photo Frame</span>
+                                        <span><i class='bx bxs-chair'></i> Study Table & Chair</span>
+                                        <span><i class='bx bxs-cool'></i> AC</span>
+                                        <span><i class='bx bxs-sun'></i> Well-lit and Ventilated</span>
+                                        <span><i class='bx bxs-fridge'></i> Common Refrigerator</span>
+                                        <span><i class='bx bxs-tv'></i> TV</span>
+                                        <span><i class='bx bxs-grid'></i> Shoe Rack</span>
+                                    </div>
+                                </div>
+
+                                <!-- Safety Section -->
+                                <div class="amenities-section safety-section">
+                                    <h4><i class='bx bxs-shield-alt-2'></i> Safety</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-camera'></i> CCTV</span>
+                                        <span><i class='bx bxs-key'></i> Access Control</span>
+                                        <span><i class='bx bxs-phone-call'></i> SOS/ Emergency Response</span>
+                                    </div>
+                                </div>
+
+                                <!-- Savings Section -->
+                                <div class="amenities-section savings-section">
+                                    <h4><i class='bx bxs-wallet'></i> Savings</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-badge-dollar'></i> No Brokerage</span>
+                                        <span><i class='bx bxs-lock-open-alt'></i> Flexi-Lock-in</span>
+                                        <span><i class='bx bxs-bank'></i> 1 Month Deposit</span>
+                                    </div>
+                                </div>
+
+                                <!-- Smart Section -->
+                                <div class="amenities-section smart-section">
+                                    <h4><i class='bx bxs-bulb'></i> Smart</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-wifi'></i> High Speed WiFi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="modal-buttons">
+                                <button class="schedule-btn" onclick="openBookingModal('Harjap Homes')">Schedule Visit</button>
+                                <button class="enquire-btn" onclick="openEnquiryModal('Harjap Homes')">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PG Box 6 -->
+            <div class="pg-box" id="pg-box-pg6" onclick="showPgDetails('pg6')">
+                <div class="pg-image">
+                    <button class="nav-btn prev-btn" onclick="event.stopPropagation(); changeCardImage('pg6', -1)">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <img class="slide-image" src="img/VIP1.jpg" alt="PG Image">
+                    <button class="nav-btn next-btn" onclick="event.stopPropagation(); changeCardImage('pg6', 1)">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <span class="rating"><i class='bx bxs-star'></i> 4.2</span>
+                </div>
+                <div class="pg-info">
+                    <h3>VIP Apartment</h3>
+                    <p class="location"><i class='bx bxs-map'></i> PG at T-Point</p>
+                    <p class="price">₹10,000 <span>Onwards</span></p>
+                </div>
+                <div class="pg-buttons">
+                    <button class="schedule-btn">Schedule Visit</button>
+                    <button class="enquire-btn">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- PG Details Modal 6 -->
+            <div id="pgDetailsModal-pg6" class="modal">
+                <div class="modal-content details-modal">
+                    <span class="close">&times;</span>
+                    <div class="pg-details-container">
+                        <div class="pg-details-image">
+                            <div class="main-image">
+                                <img id="modalPgImage-pg6" src="img/VIP1.jpg" alt="PG Image">
+                                <span class="modal-rating"><i class='bx bxs-star'></i> 4.2</span>
+                            </div>
+                            <div class="image-thumbnails">
+                                <img src="img/VIP1.jpg" alt="PG Image 1" onclick="changeMainImage('pg6', this.src)">
+                                <img src="img/VIP2.jpg" alt="PG Image 2" onclick="changeMainImage('pg6', this.src)">
+                                <img src="img/VIP3.jpg" alt="PG Image 3" onclick="changeMainImage('pg6', this.src)">
+                                <img src="img/VIP4.jpg" alt="PG Image 4" onclick="changeMainImage('pg6', this.src)">
+                            </div>
+                        </div>
+                        <div class="pg-details-info">
+                            <h2>VIP Apartment</h2>
+                            <p class="modal-location"><i class='bx bxs-map'></i> PG at T-Point</p>
+                            <p class="modal-price">₹10,000 <span>Onwards</span></p>
+                            <p class="modal-address"># T-Point, Phagwara, Punjab 144411</p>
+                            
+                            <div class="amenities">
+                                <h3>Amenities</h3>
+                                
+                                <!-- Style Section -->
+                                <div class="amenities-section style-section">
+                                    <h4><i class='bx bxs-crown'></i> Style</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-drawer'></i> Bedside Table</span>
+                                        <span><i class='bx bxs-cabinet'></i> Cupboard</span>
+                                        <span><i class='bx bxs-curtains'></i> Curtains</span>
+                                        <span><i class='bx bxs-trash'></i> Waste Management</span>
+                                        <span><i class='bx bxs-blanket'></i> Premium Bedding</span>
+                                        <span><i class='bx bxs-image'></i> Photo Frame</span>
+                                        <span><i class='bx bxs-chair'></i> Study Table & Chair</span>
+                                        <span><i class='bx bxs-cool'></i> AC</span>
+                                        <span><i class='bx bxs-sun'></i> Well-lit and Ventilated</span>
+                                        <span><i class='bx bxs-fridge'></i> Common Refrigerator</span>
+                                        <span><i class='bx bxs-tv'></i> TV</span>
+                                        <span><i class='bx bxs-grid'></i> Shoe Rack</span>
+                                    </div>
+                                </div>
+
+                                <!-- Safety Section -->
+                                <div class="amenities-section safety-section">
+                                    <h4><i class='bx bxs-shield-alt-2'></i> Safety</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-camera'></i> CCTV</span>
+                                        <span><i class='bx bxs-key'></i> Access Control</span>
+                                        <span><i class='bx bxs-phone-call'></i> SOS/ Emergency Response</span>
+                                    </div>
+                                </div>
+
+                                <!-- Savings Section -->
+                                <div class="amenities-section savings-section">
+                                    <h4><i class='bx bxs-wallet'></i> Savings</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-badge-dollar'></i> No Brokerage</span>
+                                        <span><i class='bx bxs-lock-open-alt'></i> Flexi-Lock-in</span>
+                                        <span><i class='bx bxs-bank'></i> 1 Month Deposit</span>
+                                    </div>
+                                </div>
+
+                                <!-- Smart Section -->
+                                <div class="amenities-section smart-section">
+                                    <h4><i class='bx bxs-bulb'></i> Smart</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-wifi'></i> High Speed WiFi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="modal-buttons">
+                                <button class="schedule-btn" onclick="openBookingModal('VIP Apartment')">Schedule Visit</button>
+                                <button class="enquire-btn" onclick="openEnquiryModal('VIP Apartment')">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PG Box 7 -->
+            <div class="pg-box" id="pg-box-pg7" onclick="showPgDetails('pg7')">
+                <div class="pg-image">
+                    <button class="nav-btn prev-btn" onclick="event.stopPropagation(); changeCardImage('pg7', -1)">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <img class="slide-image" src="img/Aakash1.jpg" alt="PG Image">
+                    <button class="nav-btn next-btn" onclick="event.stopPropagation(); changeCardImage('pg7', 1)">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <span class="rating"><i class='bx bxs-star'></i> 4.6</span>
+                </div>
+                <div class="pg-info">
+                    <h3>Aakash Home</h3>
+                    <p class="location"><i class='bx bxs-map'></i> PG in Phase-3, Back Gate</p>
+                    <p class="price">₹7,000 <span>Onwards</span></p>
+                </div>
+                <div class="pg-buttons">
+                    <button class="schedule-btn">Schedule Visit</button>
+                    <button class="enquire-btn">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- PG Details Modal 7 -->
+            <div id="pgDetailsModal-pg7" class="modal">
+                <div class="modal-content details-modal">
+                    <span class="close">&times;</span>
+                    <div class="pg-details-container">
+                        <div class="pg-details-image">
+                            <div class="main-image">
+                                <img id="modalPgImage-pg7" src="img/Aakash1.jpg" alt="PG Image">
+                                <span class="modal-rating"><i class='bx bxs-star'></i> 4.6</span>
+                            </div>
+                            <div class="image-thumbnails">
+                                <img src="img/Aakash1.jpg" alt="PG Image 1" onclick="changeMainImage('pg7', this.src)">
+                                <img src="img/Aakash2.jpg" alt="PG Image 2" onclick="changeMainImage('pg7', this.src)">
+                                <img src="img/Aakash3.jpg" alt="PG Image 3" onclick="changeMainImage('pg7', this.src)">
+                                <img src="img/Aakash4.jpg" alt="PG Image 4" onclick="changeMainImage('pg7', this.src)">
+                            </div>
+                        </div>
+                        <div class="pg-details-info">
+                            <h2>Aakash Home</h2>
+                            <p class="modal-location"><i class='bx bxs-map'></i> PG in Phase-3, Back Gate</p>
+                            <p class="modal-price">₹7,000 <span>Onwards</span></p>
+                            <p class="modal-address"># Phase 3, Back Gate, Phagwara, Punjab 144411</p>
+                            
+                            <div class="amenities">
+                                <h3>Amenities</h3>
+                                
+                                <!-- Style Section -->
+                                <div class="amenities-section style-section">
+                                    <h4><i class='bx bxs-crown'></i> Style</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-drawer'></i> Bedside Table</span>
+                                        <span><i class='bx bxs-cabinet'></i> Cupboard</span>
+                                        <span><i class='bx bxs-curtains'></i> Curtains</span>
+                                        <span><i class='bx bxs-trash'></i> Waste Management</span>
+                                        <span><i class='bx bxs-blanket'></i> Premium Bedding</span>
+                                        <span><i class='bx bxs-image'></i> Photo Frame</span>
+                                        <span><i class='bx bxs-chair'></i> Study Table & Chair</span>
+                                        <span><i class='bx bxs-cool'></i> AC</span>
+                                        <span><i class='bx bxs-sun'></i> Well-lit and Ventilated</span>
+                                        <span><i class='bx bxs-fridge'></i> Common Refrigerator</span>
+                                        <span><i class='bx bxs-tv'></i> TV</span>
+                                        <span><i class='bx bxs-grid'></i> Shoe Rack</span>
+                                    </div>
+                                </div>
+
+                                <!-- Safety Section -->
+                                <div class="amenities-section safety-section">
+                                    <h4><i class='bx bxs-shield-alt-2'></i> Safety</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-camera'></i> CCTV</span>
+                                        <span><i class='bx bxs-key'></i> Access Control</span>
+                                        <span><i class='bx bxs-phone-call'></i> SOS/ Emergency Response</span>
+                                    </div>
+                                </div>
+
+                                <!-- Savings Section -->
+                                <div class="amenities-section savings-section">
+                                    <h4><i class='bx bxs-wallet'></i> Savings</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-badge-dollar'></i> No Brokerage</span>
+                                        <span><i class='bx bxs-lock-open-alt'></i> Flexi-Lock-in</span>
+                                        <span><i class='bx bxs-bank'></i> 1 Month Deposit</span>
+                                    </div>
+                                </div>
+
+                                <!-- Smart Section -->
+                                <div class="amenities-section smart-section">
+                                    <h4><i class='bx bxs-bulb'></i> Smart</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-wifi'></i> High Speed WiFi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="modal-buttons">
+                                <button class="schedule-btn" onclick="openBookingModal('Aakash Home')">Schedule Visit</button>
+                                <button class="enquire-btn" onclick="openEnquiryModal('Aakash Home')">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PG Box 8 -->
+            <div class="pg-box" id="pg-box-pg8" onclick="showPgDetails('pg8')">
+                <div class="pg-image">
+                    <button class="nav-btn prev-btn" onclick="event.stopPropagation(); changeCardImage('pg8', -1)">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <img class="slide-image" src="img/Hans1.jpg" alt="PG Image">
+                    <button class="nav-btn next-btn" onclick="event.stopPropagation(); changeCardImage('pg8', 1)">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <span class="rating"><i class='bx bxs-star'></i> 4.3</span>
+                </div>
+                <div class="pg-info">
+                    <h3>Hans Pg</h3>
+                    <p class="location"><i class='bx bxs-map'></i> PG in Phase-3, Back Gate</p>
+                    <p class="price">₹6,000 <span>Onwards</span></p>
+                </div>
+                <div class="pg-buttons">
+                    <button class="schedule-btn">Schedule Visit</button>
+                    <button class="enquire-btn">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- PG Details Modal 8 -->
+            <div id="pgDetailsModal-pg8" class="modal">
+                <div class="modal-content details-modal">
+                    <span class="close">&times;</span>
+                    <div class="pg-details-container">
+                        <div class="pg-details-image">
+                            <div class="main-image">
+                                <img id="modalPgImage-pg8" src="img/Hans1.jpg" alt="PG Image">
+                                <span class="modal-rating"><i class='bx bxs-star'></i> 4.3</span>
+                            </div>
+                            <div class="image-thumbnails">
+                                <img src="img/Hans1.jpg" alt="PG Image 1" onclick="changeMainImage('pg8', this.src)">
+                                <img src="img/Hans2.jpg" alt="PG Image 2" onclick="changeMainImage('pg8', this.src)">
+                                <img src="img/Hans3.jpg" alt="PG Image 3" onclick="changeMainImage('pg8', this.src)">
+                                <img src="img/Hans4.jpg" alt="PG Image 4" onclick="changeMainImage('pg8', this.src)">
+                            </div>
+                        </div>
+                        <div class="pg-details-info">
+                            <h2>Hans Pg</h2>
+                            <p class="modal-location"><i class='bx bxs-map'></i> PG in Phase-3, Back Gate</p>
+                            <p class="modal-price">₹6,000 <span>Onwards</span></p>
+                            <p class="modal-address"># Phase 3, Back Gate, Phagwara, Punjab 144411</p>
+                            
+                            <div class="amenities">
+                                <h3>Amenities</h3>
+                                
+                                <!-- Style Section -->
+                                <div class="amenities-section style-section">
+                                    <h4><i class='bx bxs-crown'></i> Style</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-drawer'></i> Bedside Table</span>
+                                        <span><i class='bx bxs-cabinet'></i> Cupboard</span>
+                                        <span><i class='bx bxs-curtains'></i> Curtains</span>
+                                        <span><i class='bx bxs-trash'></i> Waste Management</span>
+                                        <span><i class='bx bxs-blanket'></i> Premium Bedding</span>
+                                        <span><i class='bx bxs-image'></i> Photo Frame</span>
+                                        <span><i class='bx bxs-chair'></i> Study Table & Chair</span>
+                                        <span><i class='bx bxs-cool'></i> AC</span>
+                                        <span><i class='bx bxs-sun'></i> Well-lit and Ventilated</span>
+                                        <span><i class='bx bxs-fridge'></i> Common Refrigerator</span>
+                                        <span><i class='bx bxs-tv'></i> TV</span>
+                                        <span><i class='bx bxs-grid'></i> Shoe Rack</span>
+                                    </div>
+                                </div>
+
+                                <!-- Safety Section -->
+                                <div class="amenities-section safety-section">
+                                    <h4><i class='bx bxs-shield-alt-2'></i> Safety</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-camera'></i> CCTV</span>
+                                        <span><i class='bx bxs-key'></i> Access Control</span>
+                                        <span><i class='bx bxs-phone-call'></i> SOS/ Emergency Response</span>
+                                    </div>
+                                </div>
+
+                                <!-- Savings Section -->
+                                <div class="amenities-section savings-section">
+                                    <h4><i class='bx bxs-wallet'></i> Savings</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-badge-dollar'></i> No Brokerage</span>
+                                        <span><i class='bx bxs-lock-open-alt'></i> Flexi-Lock-in</span>
+                                        <span><i class='bx bxs-bank'></i> 1 Month Deposit</span>
+                                    </div>
+                                </div>
+
+                                <!-- Smart Section -->
+                                <div class="amenities-section smart-section">
+                                    <h4><i class='bx bxs-bulb'></i> Smart</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-wifi'></i> High Speed WiFi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="modal-buttons">
+                                <button class="schedule-btn" onclick="openBookingModal('Hans Pg')">Schedule Visit</button>
+                                <button class="enquire-btn" onclick="openEnquiryModal('Hans Pg')">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!-- PG Box 9 -->
+             <div class="pg-box" id="pg-box-pg9" onclick="showPgDetails('pg9')">
+                <div class="pg-image">
+                    <button class="nav-btn prev-btn" onclick="event.stopPropagation(); changeCardImage('pg9', -1)">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <img class="slide-image" src="img/AR1.jpg" alt="PG Image">
+                    <button class="nav-btn next-btn" onclick="event.stopPropagation(); changeCardImage('pg9', 1)">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                    <span class="rating"><i class='bx bxs-star'></i> 4.0</span>
+                </div>
+                <div class="pg-info">
+                    <h3>AR Home</h3>
+                    <p class="location"><i class='bx bxs-map'></i> PG in Phase-3, Back Gate</p>
+                    <p class="price">₹5,000 <span>Onwards</span></p>
+                </div>
+                <div class="pg-buttons">
+                    <button class="schedule-btn">Schedule Visit</button>
+                    <button class="enquire-btn">Enquire Now</button>
+                </div>
+            </div>
+
+            <!-- PG Details Modal 9 -->
+            <div id="pgDetailsModal-pg9" class="modal">
+                <div class="modal-content details-modal">
+                    <span class="close">&times;</span>
+                    <div class="pg-details-container">
+                        <div class="pg-details-image">
+                            <div class="main-image">
+                                <img id="modalPgImage-pg9" src="img/AR1.jpg" alt="PG Image">
+                                <span class="modal-rating"><i class='bx bxs-star'></i> 4.0</span>
+                            </div>
+                            <div class="image-thumbnails">
+                                <img src="img/AR1.jpg" alt="PG Image 1" onclick="changeMainImage('pg9', this.src)">
+                                <img src="img/AR2.jpg" alt="PG Image 2" onclick="changeMainImage('pg9', this.src)">
+                                <img src="img/AR3.jpg" alt="PG Image 3" onclick="changeMainImage('pg9', this.src)">
+                                <img src="img/AR4.jpg" alt="PG Image 4" onclick="changeMainImage('pg9', this.src)">
+                            </div>
+                        </div>
+                        <div class="pg-details-info">
+                            <h2>AR Home</h2>
+                            <p class="modal-location"><i class='bx bxs-map'></i> PG in Phase-3, Back Gate</p>
+                            <p class="modal-price">₹5,000 <span>Onwards</span></p>
+                            <p class="modal-address"># Phase 3, Back Gate, Phagwara, Punjab 144411</p>
+                            
+                            <div class="amenities">
+                                <h3>Amenities</h3>
+                                
+                                <!-- Style Section -->
+                                <div class="amenities-section style-section">
+                                    <h4><i class='bx bxs-crown'></i> Style</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-drawer'></i> Bedside Table</span>
+                                        <span><i class='bx bxs-cabinet'></i> Cupboard</span>
+                                        <span><i class='bx bxs-curtains'></i> Curtains</span>
+                                        <span><i class='bx bxs-trash'></i> Waste Management</span>
+                                        <span><i class='bx bxs-blanket'></i> Premium Bedding</span>
+                                        <span><i class='bx bxs-image'></i> Photo Frame</span>
+                                        <span><i class='bx bxs-chair'></i> Study Table & Chair</span>
+                                        <span><i class='bx bxs-cool'></i> AC</span>
+                                        <span><i class='bx bxs-sun'></i> Well-lit and Ventilated</span>
+                                        <span><i class='bx bxs-fridge'></i> Common Refrigerator</span>
+                                        <span><i class='bx bxs-tv'></i> TV</span>
+                                        <span><i class='bx bxs-grid'></i> Shoe Rack</span>
+                                    </div>
+                                </div>
+
+                                <!-- Safety Section -->
+                                <div class="amenities-section safety-section">
+                                    <h4><i class='bx bxs-shield-alt-2'></i> Safety</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-camera'></i> CCTV</span>
+                                        <span><i class='bx bxs-key'></i> Access Control</span>
+                                        <span><i class='bx bxs-phone-call'></i> SOS/ Emergency Response</span>
+                                    </div>
+                                </div>
+
+                                <!-- Savings Section -->
+                                <div class="amenities-section savings-section">
+                                    <h4><i class='bx bxs-wallet'></i> Savings</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-badge-dollar'></i> No Brokerage</span>
+                                        <span><i class='bx bxs-lock-open-alt'></i> Flexi-Lock-in</span>
+                                        <span><i class='bx bxs-bank'></i> 1 Month Deposit</span>
+                                    </div>
+                                </div>
+
+                                <!-- Smart Section -->
+                                <div class="amenities-section smart-section">
+                                    <h4><i class='bx bxs-bulb'></i> Smart</h4>
+                                    <div class="amenities-grid">
+                                        <span><i class='bx bxs-wifi'></i> High Speed WiFi</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="modal-buttons">
+                                <button class="schedule-btn" onclick="openBookingModal('AR Home')">Schedule Visit</button>
+                                <button class="enquire-btn" onclick="openEnquiryModal('AR Home')">Enquire Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Residents Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"Sky Livings has been my home away from home for the past 2 years. The facilities are excellent, and the staff is always helpful. The location is perfect for LPU students."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/testimonial1.jpg" alt="Rahul Sharma">
+                    <div class="author-info">
+                        <h4>Rahul Sharma</h4>
+                        <p>LPU Student, Computer Science</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"The security and cleanliness standards at Sky Livings are top-notch. I feel safe and comfortable here. The WiFi speed is excellent for my online classes."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/testimonial2.jpg" alt="Priya Patel">
+                    <div class="author-info">
+                        <h4>Priya Patel</h4>
+                        <p>LPU Student, Business Management</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"The food quality and variety are amazing. The study environment is peaceful, and the staff is very supportive. Highly recommended for serious students."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/testimonial3.jpg" alt="Amit Kumar">
+                    <div class="author-info">
+                        <h4>Amit Kumar</h4>
+                        <p>LPU Student, Mechanical Engineering</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"The study rooms and library facilities are excellent. I can focus on my studies without any distractions. The staff is very cooperative and understanding."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/testimonial4.jpg" alt="Neha Singh">
+                    <div class="author-info">
+                        <h4>Neha Singh</h4>
+                        <p>LPU Student, Law</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"The maintenance team is very prompt. Any issues are resolved within hours. The common areas are always clean and well-maintained."</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/testimonial5.jpg" alt="Vikram Mehta">
+                    <div class="author-info">
+                        <h4>Vikram Mehta</h4>
+                        <p>LPU Student, Electronics Engineering</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <p>"The location is perfect - close to LPU and all essential services. The shuttle service makes commuting very convenient. Highly recommended!"</p>
+                </div>
+                <div class="testimonial-author">
+                    <img src="img/testimonial6.jpg" alt="Anjali Verma">
+                    <div class="author-info">
+                        <h4>Anjali Verma</h4>
+                        <p>LPU Student, Fashion Design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Services Section -->
+    <section class="detailed-services">
+        <h2>Our Premium Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class='bx bxs-home'></i>
+                <h3>Comfortable Living Spaces</h3>
+                <ul>
+                    <li>Spacious rooms with natural lighting</li>
+                    <li>Premium quality furniture</li>
+                    <li>Regular housekeeping services</li>
+                    <li>24/7 electricity backup</li>
+                    <li>High-speed WiFi connectivity</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <i class='bx bxs-shield-alt-2'></i>
+                <h3>Safety & Security</h3>
+                <ul>
+                    <li>24/7 CCTV surveillance</li>
+                    <li>Biometric access control</li>
+                    <li>Professional security staff</li>
+                    <li>Emergency response system</li>
+                    <li>Regular safety audits</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <i class='bx bxs-food-menu'></i>
+                <h3>Food & Dining</h3>
+                <ul>
+                    <li>Hygienic kitchen facilities</li>
+                    <li>Variety of meal options</li>
+                    <li>Special dietary requirements</li>
+                    <li>Regular menu updates</li>
+                    <li>Clean dining area</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <i class='bx bxs-wifi'></i>
+                <h3>Smart Living</h3>
+                <ul>
+                    <li>High-speed internet access</li>
+                    <li>Smart room controls</li>
+                    <li>Online payment system</li>
+                    <li>Digital notice board</li>
+                    <li>Mobile app for residents</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Benefits Section -->
+    <section class="location-benefits">
+        <h2>Prime Location Benefits</h2>
+        <div class="benefits-container">
+            <div class="benefit-card">
+                <i class='bx bxs-school'></i>
+                <h3>Proximity to LPU</h3>
+                <p>Just 1-2 km from LPU campus, making it convenient for students to attend classes and access university facilities. Regular shuttle services available during peak hours.</p>
+                <ul class="location-details">
+                    <li><i class='bx bx-walk'></i> 15-20 minutes walk to LPU</li>
+                    <li><i class='bx bxs-bus'></i> Free shuttle service</li>
+                    <li><i class='bx bxs-time'></i> 5 minutes to LPU back gate</li>
+                </ul>
+            </div>
+
+            <div class="benefit-card">
+                <i class='bx bxs-store'></i>
+                <h3>Nearby Amenities</h3>
+                <p>Close to markets, restaurants, medical facilities, and entertainment options for a comfortable lifestyle.</p>
+                <ul class="location-details">
+                    <li><i class='bx bxs-shopping-bag'></i> 5 minutes to local markets</li>
+                    <li><i class='bx bxs-hospital'></i> 10 minutes to medical facilities</li>
+                    <li><i class='bx bxs-restaurant'></i> Multiple food options nearby</li>
+                    <li><i class='bx bxs-bank'></i> ATMs and banks within walking distance</li>
+                </ul>
+            </div>
+
+            <div class="benefit-card">
+                <i class='bx bxs-bus'></i>
+                <h3>Transportation</h3>
+                <p>Easy access to public transport, shuttle services, and auto-rickshaws for convenient commuting.</p>
+                <ul class="location-details">
+                    <li><i class='bx bxs-bus-alt'></i> Bus stop 2 minutes away</li>
+                    <li><i class='bx bxs-car'></i> Auto-rickshaw stand nearby</li>
+                    <li><i class='bx bxs-map'></i> Easy access to main roads</li>
+                </ul>
+            </div>
+
+            <div class="benefit-card">
+                <i class='bx bxs-map-pin'></i>
+                <h3>Strategic Location</h3>
+                <p>Located in a peaceful residential area with easy access to all essential services and facilities.</p>
+                <ul class="location-details">
+                    <li><i class='bx bxs-shield'></i> Safe and secure neighborhood</li>
+                    <li><i class='bx bxs-parking'></i> Ample parking space</li>
+                    <li><i class='bx bxs-store-alt'></i> 24/7 convenience stores nearby</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Update existing styles */
+        .location-details {
+            list-style: none;
+            padding: 0;
+            margin-top: 15px;
+        }
+
+        .location-details li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .location-details i {
+            color: #2563eb;
+            font-size: 1.2rem;
+        }
+
+        .benefit-card {
+            text-align: left;
+        }
+
+        .benefit-card p {
+            margin-bottom: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-container {
+                grid-template-columns: 1fr;
+            }
+
+            .benefits-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <a href="index.html" class="logo"><img src="img/Sky Livings Logo.png" alt="Sky Livings Logo"></a>
+                <div class="social">
+                    <a href="https://www.facebook.com/skylivingslpu/" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="https://twitter.com/skylivings" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/sky_livings/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://youtube.com/skylivings" target="_blank"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h2>Quick Links</h2>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-box">
+                <h2>Useful Links</h2>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="faq.html">FAQ</a>
+                <a href="support.html">Help & Support</a>
+            </div>
+            <div class="contact-detais">
+                <h2>Get In Touch</h2>
+                <div class="cnt">
+                    <i class='bx bxs-map'></i> &nbsp;Sky Livings,Law Gate Road<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phagwara, India
+                </div>
+                <div class="cnt">
+                    <i class='bx bxs-phone-call'></i> &nbsp; <a href="tel:+919876543210">+91 98765 43210</a>
+                </div>
+                <div class="cnt">
+                    <i class='bx bxs-envelope'></i> &nbsp; <a href="mailto:skylivings20@gmail.com">skylivings20@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&#169; <a href="index.html" class="copyright-link">Sky Livings</a>. All Rights Reserved</p>
+        <p>Designed By- <a href="www.linkedin.com/in/rohit6378" target="_blank" class="copyright-link">Rohit Choudhary</a></p>
+    </div>
+
+    <!-- Floating Contact Bar -->
+    <div class="floating-contact-bar">
+        <div class="phone-icon">
+            <a href="tel:+919876543210">
+                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Call" width="24">
+            </a>
+        </div>
+
+        <a href="https://wa.me/919876543210" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            Whatsapp
+        </a>
+
+        <a href="contact.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/545/545705.png" alt="Enquire">
+            Enquire Now
+        </a>
+    </div>
+
+    <script src="nav.js"></script>
+    <script>
+        const sliderImages = {
+            pg1: ['img/Bajaj1.jpg', 'img/Bajaj2.png', 'img/Bajaj3.jpg', 'img/Bajaj4.jpg'],
+            pg2: ['img/ShivNiwas1.jpg', 'img/ShivNiwas2.jpg', 'img/ShivNiwas3.jpg', 'img/ShivNiwas4.jpg'],
+            pg3: ['img/Lavish1.png', 'img/Lavish2.jpg', 'img/Lavish3.jpg', 'img/Lavish4.jpg'],
+            pg4: ['img/eastwood1.jpg', 'img/eastwood2.jpg', 'img/eastwood3.jpg', 'img/eastwood4.jpg'],
+            pg5: ['img/Harjap1.png', 'img/Harjap2.png', 'img/Harjap3.jpg', 'img/Harjap4.jpg'],
+            pg6: ['img/VIP1.jpg', 'img/VIP2.jpg', 'img/VIP3.jpg', 'img/VIP4.jpg'],
+            pg7: ['img/Aakash1.jpg', 'img/Aakash2.jpg', 'img/Aakash3.jpg', 'img/Aakash4.jpg'],
+            pg8: ['img/Hans1.jpg', 'img/Hans2.jpg', 'img/Hans3.jpg', 'img/Hans4.jpg'],
+            pg9: ['img/AR1.jpg', 'img/AR2.jpg', 'img/AR3.jpg', 'img/AR4.jpg']
+        };
+
+        const currentImageIndex = {
+            pg1: 0, pg2: 0, pg3: 0, pg4: 0,
+            pg5: 0, pg6: 0, pg7: 0, pg8: 0,
+            pg9: 0
+        };
+
+        function changeCardImage(pgId, direction) {
+            const images = sliderImages[pgId];
+            currentImageIndex[pgId] = (currentImageIndex[pgId] + direction + images.length) % images.length;
+            const cardImage = document.querySelector(`#pg-box-${pgId} .slide-image`);
+            if (cardImage) {
+                if (images[currentImageIndex[pgId]].endsWith('.mp4')) {
+                    cardImage.innerHTML = `<source src="${images[currentImageIndex[pgId]]}" type="video/mp4">`;
+                } else {
+                    cardImage.src = images[currentImageIndex[pgId]];
+                }
+            }
+        }
+
+        // Function to show PG details modal
+        function showPgDetails(pgNumber) {
+            const modal = document.getElementById(`pgDetailsModal-${pgNumber}`);
+            modal.style.display = "block";
+        }
+
+        // Function to change main image in modal
+        function changeMainImage(pgNumber, newSrc) {
+            const mainImage = document.getElementById(`modalPgImage-${pgNumber}`);
+            if (newSrc.endsWith('.mp4')) {
+                mainImage.innerHTML = `<source src="${newSrc}" type="video/mp4">`;
+            } else {
+                mainImage.src = newSrc;
+            }
+        }
+
+        // Close modal when clicking on 'x' button
+        document.querySelectorAll('.close').forEach(closeBtn => {
+            closeBtn.onclick = function() {
+                const modal = this.closest('.modal');
+                modal.style.display = "none";
+            }
+        });
+
+        // Close modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = "none";
+            }
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize modal close buttons
+            document.querySelectorAll('.close').forEach(closeBtn => {
+                closeBtn.onclick = function() {
+                    const modal = this.closest('.modal');
+                    modal.style.display = "none";
+                }
+            });
+        });
+    </script>
+
+    <style>
+        /* Original PG Listing Styles */
+        .pg-listings {
+            padding: 50px 0;
+        }
+
+        .pg-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .pg-box {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .pg-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .pg-image {
+            position: relative;
+            overflow: hidden;
+            height: 200px;
+        }
+
+        .pg-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .rating {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .rating i {
+            color: #ffd700;
+            margin-right: 4px;
+        }
+
+        .gold-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: linear-gradient(45deg, #ffd700, #ffcc00);
+            color: #333;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .pg-info {
+            padding: 15px;
+        }
+
+        .pg-info h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .location {
+            color: #666;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #2563eb;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .price span {
+            font-size: 14px;
+            color: #666;
+            font-weight: normal;
+        }
+
+        .pg-buttons {
+            padding: 15px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .pg-buttons button {
+            flex: 1;
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .schedule-btn {
+            background: #2563eb;
+            color: white;
+        }
+
+        .schedule-btn:hover {
+            background: #1d4ed8;
+        }
+
+        .enquire-btn {
+            background: white;
+            color: #2563eb;
+            border: 1px solid #2563eb;
+        }
+
+        .enquire-btn:hover {
+            background: #f0f7ff;
+        }
+
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.7);
+            border: none;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 2;
+        }
+
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .prev-btn {
+            left: 10px;
+        }
+
+        .next-btn {
+            right: 10px;
+        }
+
+        .nav-btn i {
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Floating bar container */
+        .floating-contact-bar {
+            position: fixed;
+            bottom: 20px;
+            left: 10px;
+            right: 10px;
+            background-color: #330066;
+            border-radius: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            z-index: 999;
+        }
+
+        .floating-contact-bar a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .floating-contact-bar img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .phone-icon {
+            background-color: white;
+            padding: 12px;
+            border-radius: 50%;
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 2px solid #330066;
+        }
+
+        @media (min-width: 768px) {
+            .floating-contact-bar {
+                display: none; /* Hide in desktop view */
+            }
+        }
+
+        /* PG Details Modal Styles */
+        .modal-content.details-modal {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-color: white;
+            margin: 40px auto;
+            padding: 20px;
+            width: 95%;
+            max-width: 1200px;
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .close {
+            position: fixed;
+            top: 20px;
+            right: 40px;
+            font-size: 28px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .pg-details-container {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .pg-details-image {
+            flex: 1;
+            min-width: 400px;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 350px;
+            position: relative;
+        }
+
+        .main-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .image-thumbnails {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            margin-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .image-thumbnails img {
+            width: 80px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+            cursor: pointer;
+            flex-shrink: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-thumbnails img:hover {
+            opacity: 0.7;
+        }
+
+        .pg-details-info {
+            flex: 1.5;
+            max-height: 600px;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        .modal-rating {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #333;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .pg-details-info h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .modal-location,
+        .modal-price,
+        .modal-address {
+            color: #666;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .modal-price {
+            font-size: 22px;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .amenities {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .amenities h3 {
+            margin-bottom: 20px;
+        }
+
+        .amenities-section {
+            margin-bottom: 20px;
+        }
+
+        .amenities-section h4 {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #333;
+        }
+
+        .amenities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 10px;
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .modal-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .modal-buttons button {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .schedule-btn {
+            background: #0066ff;
+            color: white;
+        }
+
+        .schedule-btn:hover {
+            background: #0052cc;
+        }
+
+        .enquire-btn {
+            background: white;
+            color: #0066ff;
+            border: 1px solid #0066ff;
+        }
+
+        .enquire-btn:hover {
+            background: #f0f7ff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .pg-details-container {
+                flex-direction: column;
+            }
+
+            .pg-details-image {
+                min-width: 100%;
+            }
+
+            .main-image {
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .modal-content.details-modal {
+                margin: 20px auto;
+                padding: 15px;
+            }
+
+            .main-image {
+                height: 250px;
+            }
+
+            .amenities-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+
+        body {
+            background: linear-gradient(135deg, #f0f8ff, #e6f2ff);
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .modal h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .modal form {
+            display: grid;
+            gap: 15px;
+        }
+
+        .modal input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .modal button {
+            background: var(--gradient);
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .modal button:hover {
+            background: var(--hover-gradient);
+        }
+
+        /* Testimonials Styles */
+        .testimonials {
+            padding: 60px 20px;
+            background: #f8f9fa;
+        }
+
+        .testimonials h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .testimonial-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-content {
+            margin-bottom: 20px;
+        }
+
+        .testimonial-content p {
+            color: #666;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            margin: 0;
+            color: #333;
+        }
+
+        .author-info p {
+            margin: 5px 0 0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Detailed Services Styles */
+        .detailed-services {
+            padding: 60px 20px;
+            background: white;
+        }
+
+        .detailed-services h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        .service-card li {
+            margin-bottom: 10px;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-card li:before {
+            content: "✓";
+            color: #2563eb;
+        }
+
+        /* Location Benefits Styles */
+        .location-benefits {
+            padding: 60px 20px;
+            background: #f8f9fa;
+        }
+
+        .location-benefits h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .benefits-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .benefit-card i {
+            font-size: 2.5rem;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .benefit-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .benefit-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .testimonials,
+            .detailed-services,
+            .location-benefits {
+                padding: 40px 15px;
+            }
+
+            .testimonial-container,
+            .services-grid,
+            .benefits-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- Add these modals at the end of the body, before the closing </body> tag -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Schedule a Visit</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{10}">
+                </div>
+                <div class="form-group">
+                    <input type="date" name="visit_date" required min="<?php echo date('Y-m-d'); ?>">
+                </div>
+                <div class="form-group">
+                    <input type="time" name="visit_time" required>
+                </div>
+                <button type="submit" class="submit-btn">Schedule Visit</button>
+                <div id="booking-message" class="form-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Enquiry Form Modal -->
+    <div id="enquiryModal" class="modal">
+        <div class="modal-content enquiry-modal">
+            <span class="close">&times;</span>
+            <h2>Enquiry Form</h2>
+            <form id="enquiryForm" onsubmit="submitEnquiry(event)">
+                <input type="hidden" id="enquiryProperty" name="property">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit Enquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Modal functionality
+        function openBookingModal(pgName) {
+            const modal = document.getElementById('bookingModal');
+            modal.style.display = 'block';
+        }
+
+        function openEnquiryModal(propertyName) {
+            document.getElementById('enquiryProperty').value = propertyName;
+            document.getElementById('enquiryModal').style.display = "block";
+        }
+
+        // Add click handlers to all schedule and enquire buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add handlers for schedule buttons in PG boxes
+            document.querySelectorAll('.pg-box .schedule-btn').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation(); // Prevent PG box click
+                    const pgBox = this.closest('.pg-box');
+                    const pgName = pgBox.querySelector('h3').textContent;
+                    openBookingModal(pgName);
+                });
+            });
+
+            // Add handlers for enquire buttons in PG boxes
+            document.querySelectorAll('.pg-box .enquire-btn').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.stopPropagation(); // Prevent PG box click
+                    const pgBox = this.closest('.pg-box');
+                    const pgName = pgBox.querySelector('h3').textContent;
+                    openEnquiryModal(pgName);
+                });
+            });
+
+            // Close modals when clicking the X
+            document.querySelectorAll('.close').forEach(closeBtn => {
+                closeBtn.onclick = function() {
+                    this.closest('.modal').style.display = 'none';
+                }
+            });
+
+            // Close modals when clicking outside
+            window.onclick = function(event) {
+                if (event.target.classList.contains('modal')) {
+                    event.target.style.display = 'none';
+                }
+            }
+        });
+
+        // Booking form submission
+        document.getElementById('bookingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const formData = new FormData(form);
+            const submitBtn = form.querySelector('.submit-btn');
+            const messageDiv = document.getElementById('booking-message');
+            
+            // Basic client-side validation
+            const phone = formData.get('phone');
+            if (!/^[0-9]{10}$/.test(phone)) {
+                messageDiv.textContent = 'Please enter a valid 10-digit phone number';
+                messageDiv.className = 'form-message error';
+                return;
+            }
+
+            const visitDate = new Date(formData.get('visit_date'));
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            if (visitDate < today) {
+                messageDiv.textContent = 'Please select a future date';
+                messageDiv.className = 'form-message error';
+                return;
+            }
+            
+            // Disable submit button and show loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Scheduling...';
+            messageDiv.textContent = '';
+            messageDiv.className = 'form-message';
+            
+            fetch('user/api/process_form.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.status === 'success') {
+                    messageDiv.textContent = data.message;
+                    messageDiv.className = 'form-message success';
+                    form.reset();
+                    setTimeout(() => {
+                        document.getElementById('bookingModal').style.display = 'none';
+                    }, 2000);
+                } else {
+                    messageDiv.textContent = data.message || 'An error occurred. Please try again.';
+                    messageDiv.className = 'form-message error';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                messageDiv.textContent = 'An error occurred. Please try again.';
+                messageDiv.className = 'form-message error';
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Schedule Visit';
+            });
+        });
+
+        // Enquiry Form Functions
+        function submitEnquiry(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            // Show loading state
+            const submitBtn = form.querySelector('.submit-btn');
+            const originalBtnText = submitBtn.textContent;
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Submitting...';
+            
+            fetch('user/api/process_enquiry.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.status === 'success') {
+                    alert(data.message);
+                    document.getElementById('enquiryModal').style.display = "none";
+                    form.reset();
+                } else {
+                    throw new Error(data.message || 'An error occurred. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert(error.message || 'An error occurred. Please try again.');
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalBtnText;
+            });
+        }
+
+        // Close enquiry modal when clicking on 'x' button
+        document.querySelectorAll('.close').forEach(closeBtn => {
+            closeBtn.onclick = function() {
+                const modal = this.closest('.modal');
+                modal.style.display = "none";
+            }
+        });
+    </script>
+
+    <style>
+        .form-message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .form-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .form-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Enquiry Form Modal Styles */
+        .enquiry-modal {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .enquiry-modal h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</body>
+
+</html>

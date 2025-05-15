@@ -1,0 +1,19 @@
+.pg-details-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+/* Header Styles */
+.pg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.pg-title-section h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 
+} 

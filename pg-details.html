@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Details - Sky Livings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pg-details.css">
+</head>
+<body>
+    <div class="pg-details-container">
+        <!-- Header Info -->
+        <div class="pg-header">
+            <div class="pg-title-section">
+                <h1>Colive 1174 Horwich</h1>
+                <p class="location">
+                    <span class="location-icon">📍</span>
+                    # 301, 4th Main Road, 3rd Cross Indiranagar, Kasturi Nagar, Bengaluru, Karnataka 560016, Bangalore
+                </p>
+            </div>
+            <div class="rating-badge">
+                <span class="star">★</span>
+                <span class="rating-value">3.6</span>
+            </div>
+        </div>
+
+        <!-- Image Gallery Section -->
+        <div class="gallery-section">
+            <div class="main-image">
+                <div class="gold-badge">
+                    <span class="star-icon">★</span>
+                    Gold
+                </div>
+                <img id="mainImage" src="img/pg 1.webp" alt="PG Main View">
+            </div>
+            
+            <div class="thumbnail-grid">
+                <img src="img/pg 1.webp" alt="Room View" onclick="changeMainImage(this.src)">
+                <img src="img/pg 2.webp" alt="Room View" onclick="changeMainImage(this.src)">
+                <img src="img/pg 3.webp" alt="Room View" onclick="changeMainImage(this.src)">
+                <div class="view-more">
+                    <img src="img/pg 4.webp" alt="More Photos">
+                    <div class="view-more-overlay">
+                        <span class="view-more-icon">🔍</span>
+                        <span>View 15+ Photos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="action-buttons">
+            <button class="action-btn map-view">
+                <span class="icon">🗺️</span>
+                Map View
+            </button>
+            <button class="action-btn video-tour">
+                <span class="icon">🎥</span>
+                Video Tour
+            </button>
+            <button class="action-btn share">
+                <span class="icon">📤</span>
+                Share
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function changeMainImage(src) {
+            document.getElementById('mainImage').src = src;
+            // Update active state of thumbnails
+            document.querySelectorAll('.thumbnail-grid img').forEach(img => {
+                img.classList.toggle('active', img.src === src);
+            });
+        }
+    </script>
+</body>
+</html> 

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Sky Livings - Premium PG accommodation near LPU Phagwara. Book your room, get information about facilities, and connect with our team for student housing solutions.">
+    <meta name="keywords" content="contact skylivings phagwara, pg booking near lpu, student accommodation contact, pg inquiry phagwara, lpu student housing contact, pg room booking phagwara, hostel contact near lpu, student accommodation booking">
+    <meta name="author" content="Sky Livings">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Contact Sky Livings - Premium PG Accommodation Near LPU Phagwara">
+    <meta property="og:description" content="Get in touch for room bookings, facility information, and premium student accommodation solutions in Phagwara.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:url" content="https://skylivings.com/contact">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Contact Sky Livings - Premium PG Near LPU | Student Accommodation Booking</title>
+
+    <!-- Favicon and Manifest -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        /* Mobile Action Bar Styles */
+        .mobile-action-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #4B0082;
+            padding: 10px;
+            z-index: 1000;
+            display: none;
+        }
+
+        .mobile-action-buttons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .mobile-action-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 5px;
+        }
+
+        .mobile-action-button i {
+            font-size: 1.5rem;
+            margin-bottom: 4px;
+        }
+
+        .mobile-action-button.whatsapp {
+            color: white;
+        }
+
+        .mobile-action-button.enquire {
+            color: white;
+        }
+
+        .mobile-action-button.call {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-action-bar {
+                display: block;
+            }
+            .floating-buttons {
+                display: none;
+            }
+            body {
+                padding-bottom: 70px;
+            }
+        }
+
+        /* Floating bar container */
+        .floating-contact-bar {
+            position: fixed;
+            bottom: 20px;
+            left: 10px;
+            right: 10px;
+            background-color: #330066;
+            border-radius: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            z-index: 999;
+        }
+
+        .floating-contact-bar a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .floating-contact-bar img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .phone-icon {
+            background-color: white;
+            padding: 12px;
+            border-radius: 50%;
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 2px solid #330066;
+        }
+
+        @media (min-width: 768px) {
+            .floating-contact-bar {
+                display: none; /* Hide in desktop view */
+            }
+        }
+
+        .form-message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .form-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .form-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="index.html" class="logo"><img src="img/Sky Livings Logo.png" alt="Sky Livings Logo"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="header-btn">
+            <a href="https://wa.me/919056625905" target="_blank" title="Chat on WhatsApp">
+                <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp"
+                    style="height: 40px;" />
+            </a>
+        </div>
+    </header>
+
+
+    <!-- Services Hero Section -->
+    <div class="hero-section">
+        <div class="hero-text">
+            <span>Contact Us</span>
+            <span>Get in Touch with Us</span>
+        </div>
+      </div>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <div class="container">
+            <div class="info-box">
+                <i class='bx bxs-map'></i>
+                <h3>Our Location</h3>
+                <p>Sky Livings, Law Gate Rd<br>Punjab 144411</p>
+            </div>
+            <div class="info-box">
+                <i class='bx bxs-phone-call'></i>
+                <h3>Phone Number</h3>
+                <p><a href="tel:+917566522341">+91 75665 22341</a></p>
+                <p><a href="tel:+919056625905">+91 90566 25905</a></p>
+            </div>
+            <div class="info-box">
+                <i class='bx bxs-envelope'></i>
+                <h3>Email Address</h3>
+                <p><a href="mailto:skylivings20@gmail.com">skylivings20@gmail.com</a></p>
+                <p><a href="mailto:support@skylivings.com">support@skylivings.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <div class="container">
+            <div class="form-container">
+                <h2>Send us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select name="subject" required>
+                            <option value="">Select Subject</option>
+                            <option value="booking">PG Booking</option>
+                            <option value="enquiry">General Enquiry</option>
+                            <option value="support">Support</option>
+                            <option value="feedback">Feedback</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+                    </div>
+                    <input type="hidden" name="form_type" value="contact">
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div id="form-message" class="form-message"></div>
+                </form>
+            </div>
+            <div class="map-container">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3425.997245859384!2d75.6924271!3d31.2561599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5febd8fa4f2f%3A0x36f50a6d437b92e7!2sLaw%20Gate%20Rd%2C%20Punjab%20144411!5e0!3m2!1sen!2sin!4v1713264560000!5m2!1sen!2sin" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="question">
+                    <h3>How can I book a PG?</h3>
+                    <i class='bx bx-plus'></i>
+                </div>
+                <div class="answer">
+                    <p>You can book a PG by visiting our services page, selecting your preferred PG, and clicking on the 'Schedule Visit' button. You can also contact us directly through phone or WhatsApp.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question">
+                    <h3>What are the payment options?</h3>
+                    <i class='bx bx-plus'></i>
+                </div>
+                <div class="answer">
+                    <p>We accept various payment methods including online transfers, UPI, credit/debit cards, and cash payments at our office.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="question">
+                    <h3>What facilities are included?</h3>
+                    <i class='bx bx-plus'></i>
+                </div>
+                <div class="answer">
+                    <p>Our PGs include WiFi, housekeeping, security, and various other amenities. Please check the specific PG listing for detailed information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <a href="index.html" class="logo"><img src="img/Sky Livings Logo.png" alt="Sky Livings Logo"></a>
+                <div class="social">
+                    <a href="https://www.facebook.com/skylivingslpu/" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="https://twitter.com/skylivings" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/sky_livings/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://youtube.com/skylivings" target="_blank"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h2>Quick Links</h2>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-box">
+                <h2>Useful Links</h2>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="faq.html">FAQ</a>
+                <a href="support.html">Help & Support</a>
+            </div>
+            <div class="contact-detais">
+                <h2>Get In Touch</h2>
+                <div class="cnt">
+                    <i class='bx bxs-map'></i> &nbsp;Sky Livings,Law Gate Road<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phagwara, India
+                </div>
+                <div class="cnt">
+                    <i class='bx bxs-phone-call'></i> &nbsp; <a href="tel:+919056625905">+91 90566 25905</a>
+                </div>
+                <div class="cnt">
+                    <i class='bx bxs-envelope'></i> &nbsp; <a href="mailto:skylivings20@gmail.com">skylivings20@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&#169; <a href="index.html" class="copyright-link">Sky Livings</a>. All Rights Reserved</p>
+        <p>Designed By- <a href="www.linkedin.com/in/rohit6378" target="_blank" class="copyright-link">Rohit Choudhary</a></p>
+    </div>
+
+    <!-- Floating Contact Bar -->
+    <div class="floating-contact-bar">
+        <div class="phone-icon">
+            <a href="tel:+919056625905">
+                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Call" width="24">
+            </a>
+        </div>
+
+        <a href="https://wa.me/919056625905" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            Whatsapp
+        </a>
+
+        <a href="contact.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/545/545705.png" alt="Enquire">
+            Enquire Now
+        </a>
+    </div>
+
+    <script src="nav.js"></script>
+    <script>
+        // FAQ Accordion
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const question = item.querySelector('.question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const formData = new FormData(form);
+            const submitBtn = form.querySelector('.submit-btn');
+            const messageDiv = document.getElementById('form-message');
+            
+            // Basic validation
+            const phone = formData.get('phone');
+            if (!/^[0-9]{10}$/.test(phone)) {
+                messageDiv.textContent = 'Please enter a valid 10-digit phone number';
+                messageDiv.className = 'form-message error';
+                return;
+            }
+
+            const email = formData.get('email');
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                messageDiv.textContent = 'Please enter a valid email address';
+                messageDiv.className = 'form-message error';
+                return;
+            }
+            
+            // Disable submit button and show loading state
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            messageDiv.textContent = '';
+            messageDiv.className = 'form-message';
+            
+            fetch('user/api/process_contact.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    messageDiv.textContent = data.message;
+                    messageDiv.className = 'form-message success';
+                    form.reset();
+                    // Scroll to the message
+                    messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                } else {
+                    messageDiv.textContent = data.message || 'An error occurred. Please try again.';
+                    messageDiv.className = 'form-message error';
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                messageDiv.textContent = 'An error occurred. Please try again.';
+                messageDiv.className = 'form-message error';
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+            });
+        });
+    </script>
+</body>
+</html> 

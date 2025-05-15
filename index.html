@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sky Livings - Best PG accommodation near LPU Phagwara. Find fully furnished rooms with modern amenities, 24/7 security, and high-speed internet. Perfect for LPU students and working professionals.">
+    <meta name="keywords" content="best pg in phagwara, pg near lpu, lpu accommodation, student housing phagwara, pg for girls near lpu, pg for boys near lpu, affordable pg phagwara, furnished rooms phagwara, lpu student housing">
+    <meta name="author" content="Sky Livings">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Sky Livings - Premium PG Accommodations Near LPU | Best PG in Phagwara">
+    <meta property="og:description" content="Find comfortable, affordable rooms for rent with modern amenities. Best PG in Phagwara for LPU students.">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:url" content="https://skylivings.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Sky Livings - Best PG Near LPU Phagwara | Student Accommodation & Hostel</title>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Sky Livings",
+        "image": "https://skylivings.com/img/logo.png",
+        "description": "Premium PG accommodations near LPU offering comfortable, affordable rooms with modern amenities",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Your Street Address",
+            "addressLocality": "Phagwara",
+            "addressRegion": "Punjab",
+            "postalCode": "144401",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "31.2240",
+            "longitude": "75.7708"
+        },
+        "url": "https://skylivings.com",
+        "telephone": "+91-XXXXXXXXXX",
+        "priceRange": "₹₹",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+        }
+    }
+    </script>
+
+    <!-- Favicon and Manifest -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="reviews.css">
+
+    <!-- Box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Add jQuery to the head section -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="js/auth.js"></script>
+
+    <style>
+        /* Mobile Action Bar Styles */
+        .mobile-action-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #4B0082;
+            padding: 10px;
+            z-index: 1000;
+            display: none;
+        }
+
+        .mobile-action-buttons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .mobile-action-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 5px;
+        }
+
+        .mobile-action-button i {
+            font-size: 1.5rem;
+            margin-bottom: 4px;
+        }
+
+        .mobile-action-button.whatsapp {
+            color: white;
+        }
+
+        .mobile-action-button.enquire {
+            color: white;
+        }
+
+        .mobile-action-button.call {
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-action-bar {
+                display: block;
+            }
+            .floating-buttons {
+                display: none;
+            }
+            body {
+                padding-bottom: 70px;
+            }
+        }
+
+        /* Floating bar container */
+        .floating-contact-bar {
+            position: fixed;
+            bottom: 20px;
+            left: 10px;
+            right: 10px;
+            background-color: #330066;
+            border-radius: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+            z-index: 999;
+        }
+
+        .floating-contact-bar a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .floating-contact-bar img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .phone-icon {
+            background-color: white;
+            padding: 12px;
+            border-radius: 50%;
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            border: 2px solid #330066;
+        }
+
+        /* Login Button Styles */
+        .login-btn {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            background-color: #5bc7da;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            height: 40px;
+        }
+
+        .login-btn:hover {
+            background-color: #7ab8cd;
+            transform: translateY(-2px);
+        }
+
+        @media (min-width: 768px) {
+            .floating-contact-bar {
+                display: none; /* Hide in desktop view */
+            }
+        }
+
+        /* User Profile Styles */
+        .user-profile {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .user-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            background: #5bc7da;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .user-icon:hover {
+            background: #7ab8cd;
+        }
+
+        .user-icon i {
+            font-size: 24px;
+            color: white;
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 50px;
+            right: 0;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 0;
+            min-width: 200px;
+            display: none;
+            z-index: 1000;
+        }
+
+        .dropdown-menu.show {
+            display: block;
+        }
+
+        .user-info {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f8f9fa;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .user-info i {
+            font-size: 20px;
+            color: #4B0082;
+        }
+
+        .user-info span {
+            font-weight: 500;
+            color: #333;
+        }
+
+        .dropdown-divider {
+            height: 1px;
+            background: #e9ecef;
+            margin: 0;
+        }
+
+        .dropdown-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .dropdown-item i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .dropdown-item:hover {
+            background-color: #f8f9fa;
+        }
+
+        .dropdown-item:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+
+        .dropdown-item.logout {
+            color: #dc2626;
+        }
+
+        /* Header button styles */
+        .header-btn {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        /* WhatsApp button style */
+        .header-btn a img {
+            height: 40px;
+            width: auto;
+            vertical-align: middle;
+        }
+
+        .welcome-text {
+            color: #4B0082;
+            font-weight: 500;
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .welcome-text {
+                display: none;
+            }
+        }
+
+        .reviews-section {
+            padding: 50px 0;
+            background-color: #f8f9fa;
+            overflow: hidden;
+        }
+
+        .reviews-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .reviews-wrapper {
+            display: flex;
+            gap: 20px;
+            animation: scrollReviews 30s linear infinite;
+        }
+
+        .review-card {
+            flex: 0 0 350px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .rating {
+            color: #ffc107;
+            margin-bottom: 10px;
+        }
+
+        .rating i {
+            margin-right: 2px;
+        }
+
+        .review-card p {
+            margin: 15px 0;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        .reviewer-info h4 {
+            margin: 0;
+            color: #4B0082;
+        }
+
+        .reviewer-info p {
+            margin: 5px 0 0;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        @keyframes scrollReviews {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-350px * 6 - 20px * 5));
+            }
+        }
+
+        .reviews-wrapper:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('inquiryForm');
+        const locationSelect = document.getElementById('location');
+        const propertyInput = document.getElementById('property');
+
+        // Update property field when location changes
+        locationSelect.addEventListener('change', function() {
+            propertyInput.value = this.options[this.selectedIndex].text;
+        });
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Set initial property value if not set
+            if (!propertyInput.value) {
+                propertyInput.value = locationSelect.options[locationSelect.selectedIndex].text;
+            }
+
+            // Submit form data using fetch
+            fetch(form.action, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.status === 'success') {
+                    alert(data.message);
+                    form.reset();
+                } else {
+                    alert(data.message || 'An error occurred. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again.');
+            });
+        });
+    });
+    </script>
+
+    <!-- Navbar -->
+    <header>
+        <!-- logo -->
+        <a href="" class="logo"><img src="img/Sky Livings Logo.png" alt="Sky Livings - Premium PG Accommodation Near LPU"></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- Nav-list -->
+        <ul class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+
+        <!-- Login and WhatsApp buttons -->
+        <div class="header-btn">
+            <div class="user-profile" id="userProfile" style="display: none;">
+                <span class="welcome-text"></span>
+                <div class="user-icon" id="userIcon">
+                    <i class='bx bxs-user-circle'></i>
+                </div>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <div class="user-info">
+                        <i class='bx bxs-user'></i>
+                        <span id="dropdownUsername">Username</span>
+                    </div>
+                    <div class="dropdown-divider"></div>
+                    <a href="javascript:void(0)" class="dropdown-item" onclick="logout()">
+                        <i class='bx bx-log-out'></i> Logout
+                    </a>
+                </div>
+            </div>
+            <a href="user/login.html" class="login-btn" id="loginBtn">
+                <i class='bx bx-user'></i> <span id="loginText">Login</span>
+            </a>
+            <a href="https://wa.me/919056625905" target="_blank" title="Chat on WhatsApp">
+                <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
+            </a>
+        </div>
+    </header>
+
+    <!-- home -->
+    <section class="home" id="home">
+        <div class="hero">
+            <div class="slider">
+                <div class="slide" style="background-image: url('img/hp1.webp');" aria-label="Modern PG Room with Study Area"></div>
+                <div class="slide" style="background-image: url('img/hp2.jpg');" aria-label="Comfortable Living Space at Sky Livings"></div>
+                <div class="slide" style="background-image: url('img/hp3.webp');" aria-label="Premium Student Accommodation Facilities"></div>
+                <div class="slide" style="background-image: url('img/hp4.webp');" aria-label="Sky Livings PG Common Area"></div>
+            </div>
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>Find Your Perfect Stay in Law Gate!</h1>
+                <p>Fully furnished rooms with all amenities – Comfortable, Affordable, and Secure.</p>
+                <div class="cta-buttons">
+                    <a href="services.html" data-requires-login="true">Explore Rooms</a>
+                    <a href="contact.html" data-requires-login="true">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/Mens-removebg-preview.png" alt="PG Accommodation for Male Students Near LPU">
+                </div>
+                <div>
+                    <h2>PG For Mens</h2>
+                    <button class="explore-btn" onclick="window.location.href='services.html';" data-requires-login="true">Explore</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/Womens-removebg-preview.png" alt="PG Accommodation for Female Students Near LPU">
+                </div>
+                <div>
+                    <h2>PG For Women</h2>
+                    <button class="explore-btn" onclick="window.location.href='services.html';" data-requires-login="true">Explore</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-container">
+                    <img src="img/Coliving-removebg-preview.png" alt="Co-living PG Accommodation Near LPU">
+                </div>
+                <div>
+                    <h2>PG For Coliving</h2>
+                    <button class="explore-btn" onclick="window.location.href='services.html';" data-requires-login="true">Explore</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="info">
+                <h2>Why stay with Sky Livings?</h2>
+                <ul>
+                    <li>&#128101; Coliving Unisex homes for today's renter</li>
+                    <li>&#128719; Well maintained, beautiful & fully-furnished rooms</li>
+                    <li>&#127869; High-speed internet, 24 Hours Electricity Backup</li>
+                    <li>&#128176; Flexible stays @ affordable prices with end-to-end digital experience</li>
+                    <li>&#128680; CCTV monitored, Emergency Response for utmost safety</li>
+                </ul>
+                <img class="building" src="img/joincolive.png" alt="">
+            </div>
+            <div class="form-container">
+                <h3>Drop your Requirements, <span>get a quick response.</span></h3>
+                <form id="inquiryForm" method="POST" data-requires-login="true">
+                    <input type="text" name="name" placeholder="Name*" required>
+                    <input type="tel" name="phone" placeholder="Mobile number*" required pattern="[0-9]{10}">
+                    <input type="email" name="email" placeholder="Email*" required>
+                    <select name="location" required>
+                        <option value="">Select Location</option>
+                        <option value="t_point">T-Point</option>
+                        <option value="green_vally">Green Vally</option>
+                        <option value="jazzy_properties">Jazzy Properties</option>
+                        <option value="back_gate">Phase-3, Back Gate</option>
+                    </select>
+                    <select name="accommodation" required>
+                        <option value="">Accommodation Type*</option>
+                        <option value="Single">Single</option>
+                        <option value="Double">Double</option>
+                    </select>
+                    <button type="submit" id="submitBtn">Submit</button>
+                </form>
+                <p>Need Assistance? Call at <a href="tel:+919056625905">+91 9056625905</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="stats-container">
+            <div class="stat">
+                <i class='bx bx-buildings'></i>
+                <h3>25+</h3>
+                <p>Properties</p>
+            </div>
+            <div class="stat">
+                <i class='bx bx-user'></i>
+                <h3>5,000+</h3>
+                <p>Tenants</p>
+            </div>
+            <div class="stat">
+                <i class='bx bx-bed'></i>
+                <h3>300+</h3>
+                <p>Beds</p>
+            </div>
+            <div class="stat">
+                <i class='bx bx-group'></i>
+                <h3>10,000+</h3>
+                <p>Users</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="whysection">
+            <div class="left">
+                <h1>Why Sky Livings is gaining momentum?</h1>
+                <div class="features">
+                    <div class="feature"><img src="https://img.icons8.com/ios-filled/50/000000/network.png" />Social
+                        Circles</div>
+                    <div class="feature"><img src="https://img.icons8.com/ios/50/000000/agreement.png" />Flexi-Contract
+                    </div>
+                    <div class="feature"><img src="https://img.icons8.com/ios/50/000000/sofa.png" />Fully-furnished
+                    </div>
+                    <div class="feature"><img src="https://img.icons8.com/ios/50/000000/maintenance.png" />Managed</div>
+                    <div class="feature"><img
+                            src="https://img.icons8.com/ios/50/000000/security-shield-green.png" />Safety Net</div>
+                    <div class="feature"><img src="https://img.icons8.com/ios/50/000000/apartment.png" />Loaded with
+                        amenities</div>
+                    <div class="feature"><img src="https://img.icons8.com/ios/50/000000/real-estate.png" />Affordable
+                        living in gated societies</div>
+                </div>
+                <a class="whatsapp-button" href="https://wa.me/919056625905" target="_blank">
+                    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" />Whatsapp Now
+                </a>
+            </div>
+
+            <div class="right">
+                <img src="img/student.png" alt="People Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="reviews-section">
+        <h2>What Our Customers Say</h2>
+        <div class="reviews-container">
+            <div class="reviews-wrapper">
+                <div class="review-card">
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>"Excellent service! The team was very professional and helped me find the perfect PG accommodation. Highly recommended!"</p>
+                    <div class="reviewer-info">
+                        <div>
+                            <h4>Rohit Choudhary</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>"Great experience with Sky Livings. The PG facilities are well-maintained and the staff is very helpful. Would definitely stay again!"</p>
+                    <div class="reviewer-info">
+                        <div>
+                            <h4>Ravi Roushan</h4>
+                            <p>Working Professional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>"The best PG service in Law gate! Clean rooms and excellent security. Thank you Sky Livings for making my stay comfortable."</p>
+                    <div class="reviewer-info">
+                        <div>
+                            <h4>Kartik Kumar</h4>
+                            <p>LPU Graduate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>"Sky Livings provided me with a perfect home away from home. The community is amazing and the facilities are top-notch!"</p>
+                    <div class="reviewer-info">
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                    </div>
+                    <p>"The security and cleanliness standards are exceptional. The staff is always ready to help. Best decision to choose Sky Livings!"</p>
+                    <div class="reviewer-info">
+                        <div>
+                            <h4>Dharmendra Singh</h4>
+                            <p>LPU Faculty</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                    </div>
+                    <p>"Affordable prices with premium facilities. The internet speed is great and the maintenance team is very responsive."</p>
+                    <div class="reviewer-info">
+                        <div>
+                            <h4>Neha Patel</h4>
+                            <p>Student</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <a href="index.html" class="logo"><img src="img/Sky Livings Logo.png" alt="Sky Livings Logo"></a>
+                <div class="social">
+                    <a href="https://www.facebook.com/skylivingslpu/" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="https://twitter.com/skylivings" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/sky_livings/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://youtube.com/skylivings" target="_blank"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h2>Quick Links</h2>
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-box">
+                <h2>Useful Links</h2>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="faq.html">FAQ</a>
+                <a href="support.html">Help & Support</a>
+            </div>
+            <div class="contact-detais">
+                <h2>Get In Touch</h2>
+                <div class="cnt">
+                    <i class='bx bxs-map'></i> &nbsp;Sky Livings,Law Gate Road<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Phagwara, India
+                </div>
+                <div class="cnt">
+                    <i class='bx bxs-phone-call'></i> &nbsp; <a href="tel:+919056625905">+91 90566 25905</a>
+                </div>
+                <div class="cnt">
+                    <i class='bx bxs-envelope'></i> &nbsp; <a href="mailto:skylivings20@gmail.com">skylivings20@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>&#169; <a href="index.html" class="copyright-link">Sky Livings</a>. All Rights Reserved</p>
+        <p>Designed By- <a href="www.linkedin.com/in/rohit6378" target="_blank" class="copyright-link">Rohit Choudhary</a></p>
+    </div>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/919056625905" target="_blank" class="floating-btn whatsapp-btn" data-requires-login="true">
+            <i class='bx bxl-whatsapp'></i>
+            <span class="btn-text">Chat on WhatsApp</span>
+        </a>
+        <a href="contact.html" class="floating-btn contact-btn" data-requires-login="true">
+            <i class='bx bx-phone-call'></i>
+            <span class="btn-text">Contact Us</span>
+        </a>
+    </div>
+
+    <!-- Floating Contact Bar -->
+    <div class="floating-contact-bar">
+        <div class="phone-icon">
+            <a href="tel:+919056625905">
+                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Call" width="24">
+            </a>
+        </div>
+
+        <a href="https://wa.me/919056625905" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            Whatsapp
+        </a>
+
+        <a href="contact.html">
+            <img src="https://cdn-icons-png.flaticon.com/512/545/545705.png" alt="Enquire">
+            Enquire Now
+        </a>
+    </div>
+
+    <script src="nav.js"></script>
+    <script>
+        // Automatic slider
+        let currentSlide = 1;
+        const totalSlides = 8;
+        
+        function nextSlide() {
+            currentSlide = (currentSlide % totalSlides) + 1;
+        }
+
+        // Form submission handler
+        document.getElementById('inquiryForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.textContent;
+            submitButton.disabled = true;
+            submitButton.textContent = 'Sending...';
+
+            try {
+                // Basic form validation
+                const name = this.querySelector('input[name="name"]').value.trim();
+                const phone = this.querySelector('input[name="phone"]').value.trim();
+                const email = this.querySelector('input[name="email"]').value.trim();
+                const location = this.querySelector('select[name="location"]').value;
+                const accommodation = this.querySelector('select[name="accommodation"]').value;
+
+                // Validate required fields
+                if (!name || !phone || !email || !location || !accommodation) {
+                    throw new Error('Please fill in all required fields.');
+                }
+
+                // Validate email format
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    throw new Error('Please enter a valid email address.');
+                }
+
+                // Validate phone number (10 digits)
+                const phoneRegex = /^\d{10}$/;
+                if (!phoneRegex.test(phone)) {
+                    throw new Error('Please enter a valid 10-digit phone number.');
+                }
+
+                // Create form data
+                const formData = new FormData();
+                formData.append('name', name);
+                formData.append('email', email);
+                formData.append('phone', phone);
+                formData.append('location', location);
+                formData.append('accommodation', accommodation);
+
+                // Debug log
+                console.log('Sending form data:', {
+                    name,
+                    email,
+                    phone,
+                    location,
+                    accommodation
+                });
+
+                // Send the request
+                const response = await fetch('user/api/inquiry.php', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                console.log('Response status:', response.status);
+                const responseText = await response.text();
+                console.log('Response text:', responseText);
+
+                let data;
+                try {
+                    data = JSON.parse(responseText);
+                } catch (e) {
+                    console.error('Failed to parse JSON:', e);
+                    throw new Error('Server returned invalid JSON. Response: ' + responseText);
+                }
+
+                if (data.status === 'success') {
+                    alert(data.message || 'Thank you for your inquiry! We will contact you soon.');
+                    this.reset();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    throw new Error(data.message || 'Failed to send inquiry');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert(error.message || 'An error occurred while sending the inquiry. Please try again later.');
+            } finally {
+                submitButton.disabled = false;
+                submitButton.textContent = originalButtonText;
+            }
+        });
+
+        // Check login status and update UI
+        function updateLoginStatus() {
+            const userToken = localStorage.getItem('user_token');
+            const userData = JSON.parse(localStorage.getItem('user_data') || '{}');
+            const loginBtn = document.getElementById('loginBtn');
+            const userProfile = document.getElementById('userProfile');
+            const dropdownUsername = document.getElementById('dropdownUsername');
+
+            if (userToken && userData.username) {
+                // User is logged in
+                loginBtn.style.display = 'none';
+                userProfile.style.display = 'flex';
+                dropdownUsername.textContent = userData.username;
+            } else {
+                // User is not logged in
+                loginBtn.style.display = 'flex';
+                userProfile.style.display = 'none';
+            }
+        }
+
+        // Toggle dropdown menu
+        document.getElementById('userIcon').addEventListener('click', function(e) {
+            e.stopPropagation();
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.classList.toggle('show');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            const dropdown = document.getElementById('dropdownMenu');
+            if (!e.target.closest('.user-profile')) {
+                dropdown.classList.remove('show');
+            }
+        });
+
+        function logout() {
+            if (confirm('Do you want to logout?')) {
+                localStorage.removeItem('user_token');
+                localStorage.removeItem('user_data');
+                window.location.href = 'index.html';
+            }
+        }
+
+        // Update login status when page loads
+        document.addEventListener('DOMContentLoaded', updateLoginStatus);
+
+        // Clone reviews for infinite scroll effect
+        document.addEventListener('DOMContentLoaded', function() {
+            const reviewsWrapper = document.querySelector('.reviews-wrapper');
+            const reviews = reviewsWrapper.innerHTML;
+            reviewsWrapper.innerHTML = reviews + reviews; // Duplicate reviews for seamless scrolling
+        });
+    </script>
+</body>
+
+</html>

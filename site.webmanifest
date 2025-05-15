@@ -1,0 +1,22 @@
+{
+    "name": "Sky Livings - Premium PG Accommodations Near LPU",
+    "short_name": "Sky Livings",
+    "description": "Find comfortable, affordable rooms for rent with modern amenities. Best PG in Phagwara for LPU students.",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#4B0082",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/"
+} 

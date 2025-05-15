@@ -1,0 +1,265 @@
+.hero-section {
+    background: url('img/servies.webp') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero-text {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.2;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px 40px;
+    border: 5px solid white;
+  }
+
+  .hero-text span {
+    display: block;
+  }
+
+.contact-info {
+    padding: 4rem 2rem;
+    background: linear-gradient(120deg, #e0f2fe, #dbeafe, #e0e7ff);
+}
+
+.contact-info .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.info-box {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(30, 144, 255, 0.3);
+}
+
+.info-box i {
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-bottom: 1.5rem;
+}
+
+.info-box h3 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.info-box p {
+    color: var(--light-color);
+    line-height: 1.6;
+}
+
+.info-box a {
+    color: var(--light-color);
+    transition: all 0.3s ease;
+}
+
+.info-box a:hover {
+    color: var(--main-color);
+}
+
+.contact-form {
+    padding: 4rem 2rem;
+    background: var(--light-bg);
+}
+
+.contact-form .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.form-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.form-container h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#contactForm {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 2px rgba(30, 144, 255, 0.1);
+    outline: none;
+}
+
+.submit-btn {
+    background: var(--gradient);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: var(--hover-gradient);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(30, 144, 255, 0.3);
+}
+
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    height: 100%;
+    min-height: 450px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 4rem 2rem;
+    background: linear-gradient(120deg, #e0f2fe, #dbeafe, #e0e7ff);
+}
+
+.faq h2 {
+    font-size: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--light-bg);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow);
+}
+
+.question {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.question h3 {
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.question i {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.answer p {
+    color: var(--light-color);
+    line-height: 1.6;
+    padding-bottom: 1.5rem;
+}
+
+.faq-item.active .answer {
+    max-height: 200px;
+}
+
+.faq-item.active .question i {
+    transform: rotate(45deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-hero {
+        height: 40vh;
+    }
+
+    .contact-content h1 {
+        font-size: 2rem;
+    }
+
+    .contact-content p {
+        font-size: 1rem;
+    }
+
+    .contact-form .container {
+        grid-template-columns: 1fr;
+    }
+
+    .map-container {
+        min-height: 300px;
+    }
+
+    .form-container {
+        order: -1;
+    }
+
+    .info-box {
+        padding: 1.5rem;
+    }
+
+    .info-box i {
+        font-size: 2.5rem;
+    }
+} 
